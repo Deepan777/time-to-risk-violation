@@ -1,0 +1,54 @@
+{
+  "GATE0": "FAIL -- LEAKAGE PRESUMED",
+  "censoring_rate": 0.6779,
+  "equivalence_margin": 0.1,
+  "kaplan_meier": {
+    "antolini_c": 0.5,
+    "ipcw_ibs": 0.1545
+  },
+  "n_origins": {
+    "cal": 463,
+    "test": 612,
+    "train": 934
+  },
+  "n_streams": 16,
+  "rule": "on class-U streams PRISM-V must be statistically indistinguishable from the marginal Kaplan-Meier curve; beating it implies leakage",
+  "scale": "full",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "variants": {
+    "prismv_first_passage": {
+      "antolini_c_mean": 0.6189,
+      "antolini_c_per_seed": [
+        0.643,
+        0.6574,
+        0.5675,
+        0.6343,
+        0.5921
+      ],
+      "antolini_c_sd": 0.0337,
+      "distinguishable_from_marginal": true,
+      "ipcw_ibs_mean": 0.1912,
+      "ipcw_ibs_sd": 0.0099
+    },
+    "prismv_two_head": {
+      "antolini_c_mean": 0.5342,
+      "antolini_c_per_seed": [
+        0.569,
+        0.5026,
+        0.5397,
+        0.4847,
+        0.575
+      ],
+      "antolini_c_sd": 0.0356,
+      "distinguishable_from_marginal": false,
+      "ipcw_ibs_mean": 0.1721,
+      "ipcw_ibs_sd": 0.0055
+    }
+  }
+}

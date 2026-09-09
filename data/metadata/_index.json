@@ -1,0 +1,29 @@
+[
+  {
+    "dataset_id": "wildtime_yearbook",
+    "domain": "computer vision (historical portrait photography)",
+    "licence": "MIT",
+    "n_rows": 74378,
+    "shift_type": "natural temporal distribution shift (no synthetic shift applied)",
+    "task": "binary classification",
+    "tier": "A"
+  },
+  {
+    "dataset_id": "elec2",
+    "domain": "electricity market (economics)",
+    "licence": "BSD-3-Clause (river distribution)",
+    "n_rows": 45312,
+    "shift_type": "natural concept drift (market regime changes)",
+    "task": "binary classification (price up/down vs moving average)",
+    "tier": "B"
+  },
+  {
+    "dataset_id": "insects_abrupt_balanced",
+    "domain": "entomology / optical sensing",
+    "licence": "BSD-3-Clause (river distribution)",
+    "n_rows": 52848,
+    "shift_type": "physically induced covariate drift (controlled temperature change)",
+    "task": "multiclass classification (insect species)",
+    "tier": "B"
+  }
+]

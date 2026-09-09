@@ -1,0 +1,122 @@
+{
+  "H": 20,
+  "L": 20,
+  "eps_margin": 0.2,
+  "max_censoring": 0.6,
+  "min_origins": 100,
+  "n_candidates": 11,
+  "n_usable": 6,
+  "note": "Computed before any PRISM-V or reference model was fitted. Reads only the structure of the estimand, never a method's accuracy.",
+  "rule": "D26: >= 100 valid origins AND censoring strictly in (0, 0.6), at eps margin 0.2",
+  "screen": [
+    {
+      "censoring_rate": 0.0,
+      "dataset": "air_quality",
+      "drift_class": "PHYSICAL",
+      "measured": true,
+      "n_events": 41,
+      "n_origins": 41,
+      "n_streams": 5,
+      "usable": false
+    },
+    {
+      "censoring_rate": 0.3458,
+      "dataset": "cmapss",
+      "drift_class": "PHYSICAL",
+      "measured": false,
+      "n_events": 331,
+      "n_origins": 506,
+      "n_streams": 5,
+      "usable": true
+    },
+    {
+      "censoring_rate": 0.0067,
+      "dataset": "elec2",
+      "drift_class": "AMBIGUOUS",
+      "measured": null,
+      "n_events": 448,
+      "n_origins": 451,
+      "n_streams": 5,
+      "usable": true
+    },
+    {
+      "censoring_rate": 0.0,
+      "dataset": "gas_drift",
+      "drift_class": "PHYSICAL",
+      "measured": true,
+      "n_events": 97,
+      "n_origins": 97,
+      "n_streams": 5,
+      "usable": false
+    },
+    {
+      "censoring_rate": 0.2299,
+      "dataset": "gas_temp_mod",
+      "drift_class": "PHYSICAL",
+      "measured": true,
+      "n_events": 2475,
+      "n_origins": 3214,
+      "n_streams": 5,
+      "usable": true
+    },
+    {
+      "censoring_rate": 0.0,
+      "dataset": "huffpost",
+      "drift_class": "SOCIAL",
+      "measured": null,
+      "n_events": 125,
+      "n_origins": 125,
+      "n_streams": 5,
+      "usable": false
+    },
+    {
+      "censoring_rate": 0.1622,
+      "dataset": "insects",
+      "drift_class": "PHYSICAL",
+      "measured": null,
+      "n_events": 155,
+      "n_origins": 185,
+      "n_streams": 5,
+      "usable": true
+    },
+    {
+      "censoring_rate": 0.0,
+      "dataset": "metropt3",
+      "drift_class": "PHYSICAL",
+      "measured": true,
+      "n_events": 649,
+      "n_origins": 649,
+      "n_streams": 5,
+      "usable": false
+    },
+    {
+      "censoring_rate": 0.0605,
+      "dataset": "news_popularity",
+      "drift_class": "SOCIAL",
+      "measured": true,
+      "n_events": 528,
+      "n_origins": 562,
+      "n_streams": 5,
+      "usable": true
+    },
+    {
+      "censoring_rate": 0.38,
+      "dataset": "yearbook",
+      "drift_class": "SOCIAL",
+      "measured": null,
+      "n_events": 664,
+      "n_origins": 1071,
+      "n_streams": 5,
+      "usable": true
+    },
+    {
+      "dataset": "hydraulic",
+      "drift_class": "PHYSICAL",
+      "measured": true,
+      "n_rows_declared": 2205,
+      "refused": "stream of 2205 rows yields at most 88 windows at the smallest admissible window size (25), below the required 120. The estimand cannot be defined on it; the dataset is refused.",
+      "refused_before_monitoring": true,
+      "usable": false
+    }
+  ]
+}

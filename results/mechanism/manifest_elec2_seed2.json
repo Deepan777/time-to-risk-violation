@@ -1,0 +1,61 @@
+{
+  "config": {
+    "H": 20,
+    "L": 20,
+    "eps_margin": 0.2,
+    "scale": "full"
+  },
+  "config_hash": "UNSET",
+  "dataset_checksum": "UNSET",
+  "dataset_id": "elec2",
+  "duration_seconds": 7.41805,
+  "ended_at": "2026-09-02T14:35:42.182562+00:00",
+  "exceptions": [],
+  "experiment": "PRH1_elec2_seed2",
+  "git_commit": "f90a10c1605926796100442aea86633ed7cb8b87",
+  "git_dirty": true,
+  "hardware": {
+    "cpu": "AMD Ryzen 7 6800H with Radeon Graphics",
+    "cpu_count_logical": 16,
+    "cuda_available": true,
+    "executable": "D:\\VIT Vellore Research one\\ML New Project -- Paper 12\\MLWA_Prospective_Model_Validity\\MLWA_Prospective_Model_Validity\\.venv\\Scripts\\python.exe",
+    "gpu_compute_capability": "8.6",
+    "gpu_multiprocessors": 30,
+    "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_total_memory_bytes": 6441926656,
+    "machine": "AMD64",
+    "nvidia_driver": "596.08",
+    "os": "Windows 10 10.0.26200",
+    "packages": {
+      "lifelines": "0.30.3",
+      "lightgbm": "4.6.0",
+      "matplotlib": "3.10.8",
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "river": "0.26.1",
+      "scipy": "1.17.1",
+      "sklearn": "1.9.0",
+      "xgboost": "3.2.0"
+    },
+    "python": "3.11.5",
+    "ram_total_bytes": 16361480192,
+    "torch": "2.13.0+cu126",
+    "torch_cuda_build": "12.6"
+  },
+  "hyperparameters": {},
+  "metrics": {
+    "age_marginal": 0.7140353439462538,
+    "cox_ph": 0.7059296042062218,
+    "km_marginal": 0.5,
+    "prismv": 0.7704469110559369
+  },
+  "notes": [],
+  "output_path": "results\\mechanism\\manifest_elec2_seed2.json",
+  "predictor_id": "mixed",
+  "run_id": "861d381e230a4513",
+  "scale": "full",
+  "seed": 2,
+  "started_at": "2026-09-02T14:35:34.764061+00:00",
+  "status": "completed",
+  "warnings": []
+}

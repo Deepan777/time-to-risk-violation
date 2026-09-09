@@ -1,0 +1,23 @@
+# dev — one or two datasets, one or two seeds, for iteration.
+#
+# Fast enough to iterate on, large enough that a real signal is visible. Used to choose what is
+# worth running at `full`, never to produce a reported number.
+#
+# NO DEV NUMBER MAY ENTER THE MANUSCRIPT.
+
+extends: ../base.yaml
+scale: dev
+
+stream:
+  n_windows: 300
+
+validity:
+  min_events: 15
+
+model:
+  epochs: 30
+  patience: 5
+
+statistics:
+  seeds: [0, 1]
+  bootstrap_resamples: 500

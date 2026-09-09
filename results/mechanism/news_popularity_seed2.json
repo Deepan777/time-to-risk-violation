@@ -1,0 +1,74 @@
+{
+  "censoring_rate": 0.0605,
+  "cox_status": {
+    "n_components": 8,
+    "status": "fitted"
+  },
+  "dataset": "news_popularity",
+  "metrics": {
+    "age_marginal": {
+      "antolini_c": 0.7137710712343664,
+      "d_cal_p": 3.018819993138855e-06,
+      "ipcw_ibs": 0.13844923327417571
+    },
+    "cox_ph": {
+      "antolini_c": 0.6912724306688418,
+      "d_cal_p": 0.00035825206455907324,
+      "ipcw_ibs": 0.11024716916113761
+    },
+    "km_marginal": {
+      "antolini_c": 0.5,
+      "d_cal_p": 9.648981653678244e-21,
+      "ipcw_ibs": 0.13081837529889476
+    },
+    "prismv": {
+      "antolini_c": 0.6251359434475259,
+      "d_cal_p": 2.165911928559365e-12,
+      "ipcw_ibs": 0.1158095320109552
+    }
+  },
+  "n_origins_total": 562,
+  "n_streams": 5,
+  "n_test_events": 221,
+  "n_test_origins": 222,
+  "scale": "full",
+  "seed": 2,
+  "tests": {
+    "age_marginal": {
+      "beats": false,
+      "ci95": [
+        -0.11990394975783618,
+        0.10028146660402694
+      ],
+      "effect_delta": -0.04969008264462815,
+      "mean_gain": -0.012813769981839116,
+      "n_pairs": 220,
+      "p_adjusted": 1.0,
+      "p_raw": 0.9302970936352507
+    },
+    "cox_ph": {
+      "beats": false,
+      "ci95": [
+        -0.07651138870104209,
+        0.045449416114341945
+      ],
+      "effect_delta": -0.07388429752066117,
+      "mean_gain": -0.01719408817719621,
+      "n_pairs": 220,
+      "p_adjusted": 1.0,
+      "p_raw": 0.9810919355993274
+    },
+    "km_marginal": {
+      "beats": true,
+      "ci95": [
+        0.04788806261027394,
+        0.24530936320242347
+      ],
+      "effect_delta": 0.459090909090909,
+      "mean_gain": 0.14390660426191032,
+      "n_pairs": 220,
+      "p_adjusted": 2.778825607831376e-11,
+      "p_raw": 9.262752026104587e-12
+    }
+  }
+}

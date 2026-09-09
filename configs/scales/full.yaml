@@ -1,0 +1,11 @@
+# full — the protocol as specified in proposal/experimental_protocol.md.
+#
+# All datasets in the (scope-reduced, see PROGRESS.md D13) Tier-A set, five seeds, all ablations,
+# all baselines at equal tuning budget. This is the ONLY scale whose records may reach the
+# manuscript.
+#
+# It exists as a file distinct from base.yaml so that the intent is explicit at the call site:
+# `--config configs/scales/full.yaml` says "this run is for the paper".
+
+extends: ../base.yaml
+scale: full

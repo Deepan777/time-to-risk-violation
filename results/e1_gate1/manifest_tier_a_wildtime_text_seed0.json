@@ -1,0 +1,47 @@
+{
+  "config": {
+    "H": 20,
+    "L": 20,
+    "eps_margin": 0.2,
+    "eps_quantile": 0.75,
+    "scale": "full"
+  },
+  "config_hash": "UNSET",
+  "dataset_checksum": "UNSET",
+  "dataset_id": "tier_a_wildtime_text",
+  "duration_seconds": 0.011289,
+  "ended_at": "2026-08-27T19:42:16.570145+00:00",
+  "exceptions": [
+    "Traceback (most recent call last):\n  File \"D:\\VIT Vellore Research one\\ML New Project -- Paper 12\\MLWA_Prospective_Model_Validity\\MLWA_Prospective_Model_Validity\\src\\utils\\manifest.py\", line 149, in run_manifest\n    yield man\n  File \"D:\\VIT Vellore Research one\\ML New Project -- Paper 12\\MLWA_Prospective_Model_Validity\\MLWA_Prospective_Model_Validity\\scripts\\09_run_baselines.py\", line 169, in main\n    res = run_family(family, entries, seed, log)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\VIT Vellore Research one\\ML New Project -- Paper 12\\MLWA_Prospective_Model_Validity\\MLWA_Prospective_Model_Validity\\scripts\\09_run_baselines.py\", line 67, in run_family\n    train, cal, test = chronological_split(ds, train_frac=0.5, cal_frac=0.2)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\VIT Vellore Research one\\ML New Project -- Paper 12\\MLWA_Prospective_Model_Validity\\MLWA_Prospective_Model_Validity\\src\\validity\\dataset.py\", line 271, in chronological_split\n    raise ValueError(\nValueError: calibration split is empty after applying a gap of 20 windows. The streams are too short for H=20: each needs comfortably more than 40 origins."
+  ],
+  "experiment": "E1_gate1_tier_a_wildtime_text_seed0",
+  "git_commit": "3afdfc58c9a3c9329ea81438ac6521edf796fd0e",
+  "git_dirty": true,
+  "hardware": {
+    "cpu": "AMD Ryzen 7 6800H with Radeon Graphics",
+    "cpu_count_logical": 16,
+    "cuda_available": true,
+    "gpu_compute_capability": "8.6",
+    "gpu_multiprocessors": 30,
+    "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_total_memory_bytes": 6441926656,
+    "machine": "AMD64",
+    "nvidia_driver": "596.08",
+    "os": "Windows 10 10.0.26200",
+    "python": "3.11.5",
+    "ram_total_bytes": 16361480192,
+    "torch": "2.13.0+cu126",
+    "torch_cuda_build": "12.6"
+  },
+  "hyperparameters": {},
+  "metrics": {},
+  "notes": [],
+  "output_path": "results\\e1_gate1\\manifest_tier_a_wildtime_text_seed0.json",
+  "predictor_id": "mixed",
+  "run_id": "5de737c8250d4615",
+  "scale": "full",
+  "seed": 0,
+  "started_at": "2026-08-27T19:42:16.559140+00:00",
+  "status": "failed",
+  "warnings": []
+}

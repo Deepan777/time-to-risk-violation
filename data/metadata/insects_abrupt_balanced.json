@@ -1,0 +1,15 @@
+{
+  "caveat": "Strong temporal autocorrelation makes naive persistence a deceptively strong baseline on this stream (experimental_protocol.md section 1.2). Used for comparability with prior work, never as primary evidence.",
+  "citation": "Souza et al., Challenges in benchmarking stream learning algorithms with real-world data, Data Mining and Knowledge Discovery, 2020.",
+  "dataset_id": "insects_abrupt_balanced",
+  "domain": "entomology / optical sensing",
+  "family": "tier_b_tabular",
+  "licence": "BSD-3-Clause (river distribution)",
+  "n_rows": 52848,
+  "reason_for_inclusion": "Tier B: a real stream whose drift mechanism is known by construction rather than inferred, which makes it a useful check on the forecastability taxonomy.",
+  "shift_type": "physically induced covariate drift (controlled temperature change)",
+  "source_url": "https://riverml.xyz/latest/api/datasets/Insects/",
+  "task": "multiclass classification (insect species)",
+  "temporal_structure": "sequential sensor records, variant=abrupt_balanced",
+  "tier": "B"
+}

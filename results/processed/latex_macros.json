@@ -1,0 +1,792 @@
+{
+  "macros": {
+    "AgeCmax": "0.8076",
+    "AgeCmaxConfirmatory": "0.7138",
+    "AgeCmin": "0.6386",
+    "AgeCminConfirmatory": "0.6846",
+    "AgeShareMax": "186",
+    "AgeShareMedian": "73",
+    "AgeShareMin": "50",
+    "BestBaselineMAE": "0.0722",
+    "BestBaselineMAEAnchored": "0.0722",
+    "BestBaselineName": "AR($p$)",
+    "BestBaselineNameAnchored": "AR($p$)",
+    "CcmapssAge": "0.6997",
+    "CcmapssCox": "0.6571",
+    "CcmapssPrism": "0.8186",
+    "CcmapssPrismSD": "0.0187",
+    "CelecTwoAge": "0.7140",
+    "CelecTwoCox": "0.7059",
+    "CelecTwoPrism": "0.7495",
+    "CelecTwoPrismSD": "0.0281",
+    "Censcmapss": "0.346",
+    "CenselecTwo": "0.007",
+    "Censgastempmod": "0.230",
+    "Censinsects": "0.162",
+    "CensmetroptThree": "0.000",
+    "Censnewspopularity": "0.060",
+    "Censyearbook": "0.380",
+    "CgastempmodAge": "0.7017",
+    "CgastempmodCox": "0.7588",
+    "CgastempmodPrism": "0.8408",
+    "CgastempmodPrismSD": "0.0201",
+    "CinsectsAge": "0.8076",
+    "CinsectsCox": "0.6763",
+    "CinsectsPrism": "0.9207",
+    "CinsectsPrismSD": "0.0195",
+    "CmetroptThreeAge": "0.6386",
+    "CmetroptThreeCox": "0.6758",
+    "CmetroptThreePrism": "0.7766",
+    "CmetroptThreePrismSD": "0.0414",
+    "CnewspopularityAge": "0.7138",
+    "CnewspopularityCox": "0.6913",
+    "CnewspopularityPrism": "0.6148",
+    "CnewspopularityPrismSD": "0.0508",
+    "ContextL": 20,
+    "ControlAgeP": "3.28\\times 10^{-16}",
+    "ControlAgeR": "+0.1807",
+    "ControlCfirstPassage": "0.6189",
+    "ControlCmarginal": "0.5000",
+    "ControlCtwoHead": "0.5342",
+    "ControlHazardMax": "0.4975",
+    "ControlHazardMin": "0.1463",
+    "ControlMargin": "0.10",
+    "ControlNorigins": "2,009",
+    "ControlNstreams": 16,
+    "ControlSDfirstPassage": "0.0337",
+    "CoxCmax": "0.7588",
+    "CoxCmin": "0.6571",
+    "CyearbookAge": "0.6846",
+    "CyearbookCox": "0.7506",
+    "CyearbookPrism": "0.7517",
+    "CyearbookPrismSD": "0.0222",
+    "EpsMargin": "0.20",
+    "HorizonH": 20,
+    "HuffAccDep": "18.2",
+    "HuffAccPre": "70.4",
+    "HuffChance": "9.1",
+    "IBSprismMax": "0.1935",
+    "IBSprismMin": "0.0266",
+    "KMconcordance": "0.5000",
+    "MAEanchoredFPTierAhOne": "0.0813",
+    "MAEanchoredTierAhOne": "0.0780",
+    "MAEprismFPTierAhOne": "0.0959",
+    "MAEprismTierAhOne": "0.1047",
+    "MaxCensoring": "0.6",
+    "MinEffect": "0.147",
+    "MinOrigins": 100,
+    "NbaselinesRiskPath": 6,
+    "NcandidateStreams": 11,
+    "NcellsAnyBaselineBeaten": 15,
+    "NcellsRiskPath": 60,
+    "NcmapssOrigins": "506",
+    "NconfirmatoryStreams": 4,
+    "NcoxAboveAge": 3,
+    "NdcalRejectedAge": 5,
+    "NdcalRejectedPrism": 7,
+    "NelecTwoOrigins": "451",
+    "NeligibleStreams": 6,
+    "NfamiliesPassing": 0,
+    "NgastempmodOrigins": "3,214",
+    "NibsPrismBest": 3,
+    "NineligibleStreams": 5,
+    "NinertMax": 18,
+    "NinertMin": 13,
+    "NinsectsOrigins": "185",
+    "NmetroptThreeOrigins": "649",
+    "NnewspopularityOrigins": "562",
+    "NphysConfirmatory": 2,
+    "NphysConfirmatoryBeaten": 1,
+    "NphysEligible": 3,
+    "NphysScored": 4,
+    "NphysScoredBeaten": 3,
+    "NscoredStreams": 7,
+    "Nseeds": 5,
+    "NseedsMeetingCriterion": 0,
+    "NsocConfirmatory": 2,
+    "NsocConfirmatoryBeaten": 0,
+    "NsocScoredBeaten": 0,
+    "NstateBlocks": 7,
+    "NyearbookOrigins": "1,071",
+    "PRHone": "UNDECIDED",
+    "PctAboveBestBaseline": "45",
+    "PhysGapMax": "+0.1391",
+    "PhysGapMin": "+0.1131",
+    "RegimeRatioTierA": "1.2985",
+    "RegimeRatioTierB": "0.6666",
+    "ScreenairqualityCens": "0.000",
+    "ScreenairqualityOrigins": "41",
+    "ScreencmapssCens": "0.346",
+    "ScreencmapssOrigins": "506",
+    "ScreenelecTwoCens": "0.007",
+    "ScreenelecTwoOrigins": "451",
+    "ScreengasdriftCens": "0.000",
+    "ScreengasdriftOrigins": "97",
+    "ScreengastempmodCens": "0.230",
+    "ScreengastempmodOrigins": "3,214",
+    "ScreenhuffpostCens": "0.000",
+    "ScreenhuffpostOrigins": "125",
+    "ScreenhydraulicRows": "2,205",
+    "ScreeninsectsCens": "0.162",
+    "ScreeninsectsOrigins": "185",
+    "ScreenmetroptThreeCens": "0.000",
+    "ScreenmetroptThreeOrigins": "649",
+    "ScreennewspopularityCens": "0.060",
+    "ScreennewspopularityOrigins": "562",
+    "ScreenyearbookCens": "0.380",
+    "ScreenyearbookOrigins": "1,071",
+    "SeedscmapssBeaten": 4,
+    "SeedselecTwoBeaten": 0,
+    "SeedsgastempmodBeaten": 5,
+    "SeedsinsectsBeaten": 5,
+    "SeedsmetroptThreeBeaten": 5,
+    "SeedsnewspopularityBeaten": 0,
+    "SeedsyearbookBeaten": 3,
+    "SensMinP": "0.50",
+    "SensNdatasets": 7,
+    "SensNstreams": 2,
+    "SensNwithPower": 0,
+    "SigLevel": "0.05",
+    "SigLevelPct": "5",
+    "SocGapMax": "+0.0671",
+    "SocGapMin": "-0.0990",
+    "StateDimClf": 87,
+    "StateDimReg": 79,
+    "TransferAgeCmax": "0.8076",
+    "TransferAgeCmin": "0.6846",
+    "TransferCmax": "0.3860",
+    "TransferCmin": "0.3583",
+    "TransferIndomainMax": "0.9207"
+  },
+  "n_macros": 157,
+  "provenance": {
+    "AgeCmax": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "AgeCmaxConfirmatory": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "AgeCmin": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "AgeCminConfirmatory": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "AgeShareMax": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "AgeShareMedian": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "AgeShareMin": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "BestBaselineMAE": {
+      "artefact": "results/e1_gate1/tier_*_seed*.json",
+      "quantity": "strongest online baseline on the image family one window ahead, selected by mean MAE across seeds rather than assumed"
+    },
+    "BestBaselineMAEAnchored": {
+      "artefact": "results/e16_residual/tier_*_seed*.json",
+      "quantity": "same selection within the anchored experiment"
+    },
+    "BestBaselineName": {
+      "artefact": "results/e1_gate1/tier_*_seed*.json",
+      "quantity": "strongest online baseline on the image family one window ahead, selected by mean MAE across seeds rather than assumed"
+    },
+    "BestBaselineNameAnchored": {
+      "artefact": "results/e16_residual/tier_*_seed*.json",
+      "quantity": "same selection within the anchored experiment"
+    },
+    "CcmapssAge": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CcmapssCox": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CcmapssPrism": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CcmapssPrismSD": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CelecTwoAge": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CelecTwoCox": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CelecTwoPrism": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CelecTwoPrismSD": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "Censcmapss": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CenselecTwo": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "Censgastempmod": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "Censinsects": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CensmetroptThree": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "Censnewspopularity": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "Censyearbook": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CgastempmodAge": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CgastempmodCox": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CgastempmodPrism": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CgastempmodPrismSD": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CinsectsAge": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CinsectsCox": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CinsectsPrism": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CinsectsPrismSD": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CmetroptThreeAge": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CmetroptThreeCox": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CmetroptThreePrism": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CmetroptThreePrismSD": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CnewspopularityAge": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CnewspopularityCox": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CnewspopularityPrism": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CnewspopularityPrismSD": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "ContextL": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "eligibility screen: candidate roster, thresholds and outcome"
+    },
+    "ControlAgeP": {
+      "artefact": "results/gate0/age_hazard_diagnostic.json",
+      "quantity": "age-hazard diagnostic on the negative-control streams"
+    },
+    "ControlAgeR": {
+      "artefact": "results/gate0/age_hazard_diagnostic.json",
+      "quantity": "age-hazard diagnostic on the negative-control streams"
+    },
+    "ControlCfirstPassage": {
+      "artefact": "results/gate0/GATE0_VERDICT.json",
+      "quantity": "negative control on exchangeable streams"
+    },
+    "ControlCmarginal": {
+      "artefact": "results/gate0/GATE0_VERDICT.json",
+      "quantity": "negative control on exchangeable streams"
+    },
+    "ControlCtwoHead": {
+      "artefact": "results/gate0/GATE0_VERDICT.json",
+      "quantity": "negative control on exchangeable streams"
+    },
+    "ControlHazardMax": {
+      "artefact": "results/gate0/age_hazard_diagnostic.json",
+      "quantity": "age-hazard diagnostic on the negative-control streams"
+    },
+    "ControlHazardMin": {
+      "artefact": "results/gate0/age_hazard_diagnostic.json",
+      "quantity": "age-hazard diagnostic on the negative-control streams"
+    },
+    "ControlMargin": {
+      "artefact": "results/gate0/GATE0_VERDICT.json",
+      "quantity": "negative control on exchangeable streams"
+    },
+    "ControlNorigins": {
+      "artefact": "results/gate0/age_hazard_diagnostic.json",
+      "quantity": "age-hazard diagnostic on the negative-control streams"
+    },
+    "ControlNstreams": {
+      "artefact": "results/gate0/GATE0_VERDICT.json",
+      "quantity": "negative control on exchangeable streams"
+    },
+    "ControlSDfirstPassage": {
+      "artefact": "results/gate0/GATE0_VERDICT.json",
+      "quantity": "negative control on exchangeable streams"
+    },
+    "CoxCmax": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "CoxCmin": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "CyearbookAge": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CyearbookCox": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CyearbookPrism": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "CyearbookPrismSD": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "EpsMargin": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "eligibility screen: candidate roster, thresholds and outcome"
+    },
+    "HorizonH": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "eligibility screen: candidate roster, thresholds and outcome"
+    },
+    "HuffAccDep": {
+      "artefact": "results/scope_conditions/huffpost_exclusion.json",
+      "quantity": "pre-monitoring exclusion of the headline stream"
+    },
+    "HuffAccPre": {
+      "artefact": "results/scope_conditions/huffpost_exclusion.json",
+      "quantity": "pre-monitoring exclusion of the headline stream"
+    },
+    "HuffChance": {
+      "artefact": "results/scope_conditions/huffpost_exclusion.json",
+      "quantity": "pre-monitoring exclusion of the headline stream"
+    },
+    "IBSprismMax": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "IPCW integrated Brier score and D-calibration rejection counts"
+    },
+    "IBSprismMin": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "IPCW integrated Brier score and D-calibration rejection counts"
+    },
+    "KMconcordance": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "MAEanchoredFPTierAhOne": {
+      "artefact": "results/e16_residual/E16_SUMMARY.json",
+      "quantity": "anchored incremental-information experiment"
+    },
+    "MAEanchoredTierAhOne": {
+      "artefact": "results/e16_residual/E16_SUMMARY.json",
+      "quantity": "anchored incremental-information experiment"
+    },
+    "MAEprismFPTierAhOne": {
+      "artefact": "results/e1_gate1/GATE1_VERDICT.json",
+      "quantity": "risk-path forecasting outcome under the pre-registered decision rule"
+    },
+    "MAEprismTierAhOne": {
+      "artefact": "results/e1_gate1/GATE1_VERDICT.json",
+      "quantity": "risk-path forecasting outcome under the pre-registered decision rule"
+    },
+    "MaxCensoring": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "eligibility screen: candidate roster, thresholds and outcome"
+    },
+    "MinEffect": {
+      "artefact": "manuscript/assets/preregistered_constants.json",
+      "quantity": "pre-registered decision rule and seed count; not a measurement"
+    },
+    "MinOrigins": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "eligibility screen: candidate roster, thresholds and outcome"
+    },
+    "NbaselinesRiskPath": {
+      "artefact": "results/e1_gate1/GATE1_VERDICT.json",
+      "quantity": "risk-path forecasting outcome under the pre-registered decision rule"
+    },
+    "NcandidateStreams": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "eligibility screen: candidate roster, thresholds and outcome"
+    },
+    "NcellsAnyBaselineBeaten": {
+      "artefact": "results/e1_gate1/GATE1_VERDICT.json",
+      "quantity": "risk-path forecasting outcome under the pre-registered decision rule"
+    },
+    "NcellsRiskPath": {
+      "artefact": "results/e1_gate1/GATE1_VERDICT.json",
+      "quantity": "risk-path forecasting outcome under the pre-registered decision rule"
+    },
+    "NcmapssOrigins": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "NconfirmatoryStreams": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "NcoxAboveAge": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "survival reference concordances and the share of above-chance concordance age accounts for"
+    },
+    "NdcalRejectedAge": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "IPCW integrated Brier score and D-calibration rejection counts"
+    },
+    "NdcalRejectedPrism": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "IPCW integrated Brier score and D-calibration rejection counts"
+    },
+    "NelecTwoOrigins": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "NeligibleStreams": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "eligibility screen: candidate roster, thresholds and outcome"
+    },
+    "NfamiliesPassing": {
+      "artefact": "results/e1_gate1/GATE1_VERDICT.json",
+      "quantity": "risk-path forecasting outcome under the pre-registered decision rule"
+    },
+    "NgastempmodOrigins": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "NibsPrismBest": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "IPCW integrated Brier score and D-calibration rejection counts"
+    },
+    "NineligibleStreams": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "eligibility screen: candidate roster, thresholds and outcome"
+    },
+    "NinertMax": {
+      "artefact": "results/processed/state_dimensions.json",
+      "quantity": "deployment-state view count, task-specific dimension, and how many dimensions are constant on a stream; counted from the monitored cache, not declared"
+    },
+    "NinertMin": {
+      "artefact": "results/processed/state_dimensions.json",
+      "quantity": "deployment-state view count, task-specific dimension, and how many dimensions are constant on a stream; counted from the monitored cache, not declared"
+    },
+    "NinsectsOrigins": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "NmetroptThreeOrigins": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "NnewspopularityOrigins": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "NphysConfirmatory": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "NphysConfirmatoryBeaten": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "NphysEligible": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "NphysScored": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "NphysScoredBeaten": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "NscoredStreams": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "Nseeds": {
+      "artefact": "manuscript/assets/preregistered_constants.json",
+      "quantity": "pre-registered decision rule and seed count; not a measurement"
+    },
+    "NseedsMeetingCriterion": {
+      "artefact": "results/e1_gate1/GATE1_VERDICT.json",
+      "quantity": "risk-path forecasting outcome under the pre-registered decision rule"
+    },
+    "NsocConfirmatory": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "NsocConfirmatoryBeaten": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "NsocScoredBeaten": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "NstateBlocks": {
+      "artefact": "results/processed/state_dimensions.json",
+      "quantity": "deployment-state view count, task-specific dimension, and how many dimensions are constant on a stream; counted from the monitored cache, not declared"
+    },
+    "NyearbookOrigins": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "PRHone": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "PctAboveBestBaseline": {
+      "artefact": "results/e1_gate1/GATE1_VERDICT.json + results/e1_gate1/tier_*_seed*.json",
+      "quantity": "percentage by which the two-head model's one-step MAE exceeds that baseline"
+    },
+    "PhysGapMax": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "PhysGapMin": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "RegimeRatioTierA": {
+      "artefact": "results/gate0/age_hazard_diagnostic.json",
+      "quantity": "train/test regime comparability ratio"
+    },
+    "RegimeRatioTierB": {
+      "artefact": "results/gate0/age_hazard_diagnostic.json",
+      "quantity": "train/test regime comparability ratio"
+    },
+    "ScreenairqualityCens": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreenairqualityOrigins": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreencmapssCens": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreencmapssOrigins": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreenelecTwoCens": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreenelecTwoOrigins": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreengasdriftCens": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreengasdriftOrigins": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreengastempmodCens": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreengastempmodOrigins": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreenhuffpostCens": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreenhuffpostOrigins": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreenhydraulicRows": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreeninsectsCens": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreeninsectsOrigins": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreenmetroptThreeCens": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreenmetroptThreeOrigins": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreennewspopularityCens": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreennewspopularityOrigins": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreenyearbookCens": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "ScreenyearbookOrigins": {
+      "artefact": "results/processed/mechanism_usability_screen.json",
+      "quantity": "per-candidate screen statistics"
+    },
+    "SeedscmapssBeaten": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "SeedselecTwoBeaten": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "SeedsgastempmodBeaten": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "SeedsinsectsBeaten": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "SeedsmetroptThreeBeaten": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "SeedsnewspopularityBeaten": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "SeedsyearbookBeaten": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "per-stream survival result"
+    },
+    "SensMinP": {
+      "artefact": "results/mechanism/dependence_sensitivity.json",
+      "quantity": "stream-level blocked permutation test and its attainable-p floor"
+    },
+    "SensNdatasets": {
+      "artefact": "results/mechanism/dependence_sensitivity.json",
+      "quantity": "stream-level blocked permutation test and its attainable-p floor"
+    },
+    "SensNstreams": {
+      "artefact": "results/mechanism/dependence_sensitivity.json",
+      "quantity": "stream-level blocked permutation test and its attainable-p floor"
+    },
+    "SensNwithPower": {
+      "artefact": "results/mechanism/dependence_sensitivity.json",
+      "quantity": "stream-level blocked permutation test and its attainable-p floor"
+    },
+    "SigLevel": {
+      "artefact": "manuscript/assets/preregistered_constants.json",
+      "quantity": "pre-registered decision rule and seed count; not a measurement"
+    },
+    "SigLevelPct": {
+      "artefact": "manuscript/assets/preregistered_constants.json",
+      "quantity": "pre-registered decision rule and seed count; not a measurement"
+    },
+    "SocGapMax": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "SocGapMin": {
+      "artefact": "results/mechanism/PRH1_VERDICT.json",
+      "quantity": "drift-mechanism analysis over the streams carrying a survival result"
+    },
+    "StateDimClf": {
+      "artefact": "results/processed/state_dimensions.json",
+      "quantity": "deployment-state view count, task-specific dimension, and how many dimensions are constant on a stream; counted from the monitored cache, not declared"
+    },
+    "StateDimReg": {
+      "artefact": "results/processed/state_dimensions.json",
+      "quantity": "deployment-state view count, task-specific dimension, and how many dimensions are constant on a stream; counted from the monitored cache, not declared"
+    },
+    "TransferAgeCmax": {
+      "artefact": "results/e9e10_transfer/GATE5_VERDICT.json",
+      "quantity": "cross-domain transfer"
+    },
+    "TransferAgeCmin": {
+      "artefact": "results/e9e10_transfer/GATE5_VERDICT.json",
+      "quantity": "cross-domain transfer"
+    },
+    "TransferCmax": {
+      "artefact": "results/e9e10_transfer/GATE5_VERDICT.json",
+      "quantity": "cross-domain transfer"
+    },
+    "TransferCmin": {
+      "artefact": "results/e9e10_transfer/GATE5_VERDICT.json",
+      "quantity": "cross-domain transfer"
+    },
+    "TransferIndomainMax": {
+      "artefact": "results/e9e10_transfer/GATE5_VERDICT.json",
+      "quantity": "cross-domain transfer"
+    }
+  }
+}

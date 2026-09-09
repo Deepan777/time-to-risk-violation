@@ -1,0 +1,105 @@
+{
+  "GATE5": "FAIL",
+  "domains": {
+    "elec2": {
+      "age_marginal": {
+        "c_mean": 0.714,
+        "c_sd": 0.0
+      },
+      "gate5_vs_age_marginal": "FAIL",
+      "km_marginal": {
+        "c_mean": 0.5,
+        "c_sd": 0.0
+      },
+      "n_seeds": 5,
+      "prismv_in_domain": {
+        "c_mean": 0.7495,
+        "c_sd": 0.0281
+      },
+      "prismv_transfer": {
+        "c_mean": 0.386,
+        "c_sd": 0.0201
+      },
+      "vs_age_marginal": {
+        "mean_delta": -0.5798,
+        "mean_gain": -0.2896,
+        "seeds_above": 0
+      },
+      "vs_km_marginal": {
+        "mean_delta": -0.0284,
+        "mean_gain": -0.0801,
+        "seeds_above": 0
+      }
+    },
+    "insects": {
+      "age_marginal": {
+        "c_mean": 0.8076,
+        "c_sd": 0.0
+      },
+      "gate5_vs_age_marginal": "FAIL",
+      "km_marginal": {
+        "c_mean": 0.5,
+        "c_sd": 0.0
+      },
+      "n_seeds": 5,
+      "prismv_in_domain": {
+        "c_mean": 0.9207,
+        "c_sd": 0.0195
+      },
+      "prismv_transfer": {
+        "c_mean": 0.3854,
+        "c_sd": 0.0443
+      },
+      "vs_age_marginal": {
+        "mean_delta": -0.7614,
+        "mean_gain": -0.4387,
+        "seeds_above": 0
+      },
+      "vs_km_marginal": {
+        "mean_delta": -0.4267,
+        "mean_gain": -0.1579,
+        "seeds_above": 0
+      }
+    },
+    "yearbook": {
+      "age_marginal": {
+        "c_mean": 0.6846,
+        "c_sd": 0.0
+      },
+      "gate5_vs_age_marginal": "FAIL",
+      "km_marginal": {
+        "c_mean": 0.5,
+        "c_sd": 0.0
+      },
+      "n_seeds": 5,
+      "prismv_in_domain": {
+        "c_mean": 0.7517,
+        "c_sd": 0.0222
+      },
+      "prismv_transfer": {
+        "c_mean": 0.3583,
+        "c_sd": 0.0237
+      },
+      "vs_age_marginal": {
+        "mean_delta": -0.6061,
+        "mean_gain": -0.3293,
+        "seeds_above": 0
+      },
+      "vs_km_marginal": {
+        "mean_delta": -0.3482,
+        "mean_gain": -0.1534,
+        "seeds_above": 0
+      }
+    }
+  },
+  "n_domains_passing": 0,
+  "rule": "transfer concordance strictly above the marginal; the honest floor is age_marginal, not km_marginal (D28)",
+  "scale": "full",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

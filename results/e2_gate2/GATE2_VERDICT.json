@@ -1,0 +1,148 @@
+{
+  "GATE2": "FAIL",
+  "datasets": {
+    "elec2": {
+      "age_marginal": {
+        "c_mean": 0.714,
+        "c_sd": 0.0,
+        "ibs_mean": 0.0695
+      },
+      "beats_all_references_all_seeds": false,
+      "cox_ph": {
+        "c_mean": 0.7059,
+        "c_sd": 0.0,
+        "ibs_mean": 0.0756
+      },
+      "km_marginal": {
+        "c_mean": 0.5,
+        "c_sd": 0.0,
+        "ibs_mean": 0.0916
+      },
+      "n_seeds": 5,
+      "n_test_events": 178,
+      "n_test_origins": 181,
+      "prismv": {
+        "c_mean": 0.7495,
+        "c_sd": 0.0281,
+        "ibs_mean": 0.0699
+      },
+      "vs_age_marginal": {
+        "mean_delta": 0.0099,
+        "mean_gain": 0.0033,
+        "mean_p_adj": 0.4027830566953723,
+        "seeds_beaten": 0
+      },
+      "vs_cox_ph": {
+        "mean_delta": -0.0149,
+        "mean_gain": 0.0007,
+        "mean_p_adj": 0.3970115684474998,
+        "seeds_beaten": 0
+      },
+      "vs_km_marginal": {
+        "mean_delta": 0.6114,
+        "mean_gain": 0.2128,
+        "mean_p_adj": 1.0931204668983571e-10,
+        "seeds_beaten": 5
+      }
+    },
+    "insects": {
+      "age_marginal": {
+        "c_mean": 0.8076,
+        "c_sd": 0.0,
+        "ibs_mean": 0.0948
+      },
+      "beats_all_references_all_seeds": true,
+      "cox_ph": {
+        "c_mean": 0.6763,
+        "c_sd": 0.0,
+        "ibs_mean": 0.1552
+      },
+      "km_marginal": {
+        "c_mean": 0.5,
+        "c_sd": 0.0,
+        "ibs_mean": 0.1855
+      },
+      "n_seeds": 5,
+      "n_test_events": 62,
+      "n_test_origins": 74,
+      "prismv": {
+        "c_mean": 0.9207,
+        "c_sd": 0.0195,
+        "ibs_mean": 0.1165
+      },
+      "vs_age_marginal": {
+        "mean_delta": 0.3387,
+        "mean_gain": 0.1259,
+        "mean_p_adj": 0.0005738306547449875,
+        "seeds_beaten": 5
+      },
+      "vs_cox_ph": {
+        "mean_delta": 0.4747,
+        "mean_gain": 0.2249,
+        "mean_p_adj": 2.2940374077219366e-05,
+        "seeds_beaten": 5
+      },
+      "vs_km_marginal": {
+        "mean_delta": 1.0,
+        "mean_gain": 0.4068,
+        "mean_p_adj": 2.3944536123643415e-11,
+        "seeds_beaten": 5
+      }
+    },
+    "yearbook": {
+      "age_marginal": {
+        "c_mean": 0.6846,
+        "c_sd": 0.0,
+        "ibs_mean": 0.182
+      },
+      "beats_all_references_all_seeds": false,
+      "cox_ph": {
+        "c_mean": 0.7506,
+        "c_sd": 0.0,
+        "ibs_mean": 0.1277
+      },
+      "km_marginal": {
+        "c_mean": 0.5,
+        "c_sd": 0.0,
+        "ibs_mean": 0.2596
+      },
+      "n_seeds": 5,
+      "n_test_events": 308,
+      "n_test_origins": 443,
+      "prismv": {
+        "c_mean": 0.7517,
+        "c_sd": 0.0222,
+        "ibs_mean": 0.1935
+      },
+      "vs_age_marginal": {
+        "mean_delta": 0.1294,
+        "mean_gain": 0.0542,
+        "mean_p_adj": 0.16017512469252776,
+        "seeds_beaten": 3
+      },
+      "vs_cox_ph": {
+        "mean_delta": 0.0675,
+        "mean_gain": -0.0312,
+        "mean_p_adj": 0.15974729181161185,
+        "seeds_beaten": 0
+      },
+      "vs_km_marginal": {
+        "mean_delta": 0.621,
+        "mean_gain": 0.2302,
+        "mean_p_adj": 7.539326800187587e-18,
+        "seeds_beaten": 5
+      }
+    }
+  },
+  "deciding_reference": "age_marginal",
+  "n_datasets_beating_all_references": 1,
+  "rule": "Holm-corrected p <= 0.05 AND Cliff's delta >= 0.147, against every reference",
+  "scale": "full",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

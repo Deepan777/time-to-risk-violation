@@ -1,0 +1,15 @@
+{
+  "caveat": "Strong temporal autocorrelation makes naive persistence a deceptively strong baseline on this stream (experimental_protocol.md section 1.2). Used for comparability with prior work, never as primary evidence.",
+  "citation": "Harries, SPLICE-2 comparative evaluation: electricity pricing, 1999.",
+  "dataset_id": "elec2",
+  "domain": "electricity market (economics)",
+  "family": "tier_b_tabular",
+  "licence": "BSD-3-Clause (river distribution)",
+  "n_rows": 45312,
+  "reason_for_inclusion": "Tier B: comparability with the streaming-learning literature; a second dataset family for the Gate-1 requirement.",
+  "shift_type": "natural concept drift (market regime changes)",
+  "source_url": "https://riverml.xyz/latest/api/datasets/Elec2/",
+  "task": "binary classification (price up/down vs moving average)",
+  "temporal_structure": "half-hourly records, 1996-1998, strictly ordered",
+  "tier": "B"
+}

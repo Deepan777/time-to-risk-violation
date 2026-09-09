@@ -1,0 +1,56 @@
+{
+  "censoring_rate": 0.1622,
+  "held_out_domain": "insects",
+  "metrics": {
+    "age_marginal": {
+      "antolini_c": 0.807570977917981,
+      "ipcw_ibs": 0.0947905360923794
+    },
+    "km_marginal": {
+      "antolini_c": 0.5,
+      "ipcw_ibs": 0.18553688823959094
+    },
+    "prismv_in_domain": {
+      "antolini_c": 0.9333596214511041,
+      "ipcw_ibs": 0.1017217275258657
+    },
+    "prismv_transfer": {
+      "antolini_c": 0.3286671924290221,
+      "ipcw_ibs": 0.42641185304862883
+    }
+  },
+  "n_source_origins": 1087,
+  "n_target_test_events": 62,
+  "n_target_test_origins": 74,
+  "scale": "full",
+  "seed": 4,
+  "source_domains": [
+    "elec2",
+    "huffpost",
+    "yearbook"
+  ],
+  "tests": {
+    "transfer_vs_age_marginal": {
+      "above_reference": false,
+      "ci95": [
+        -0.5857812559048524,
+        -0.4082756020812237
+      ],
+      "effect_delta": -0.8583333333333334,
+      "mean_gain": -0.49702842899303806,
+      "n_pairs": 60,
+      "p_raw": 0.9999999999835366
+    },
+    "transfer_vs_km_marginal": {
+      "above_reference": false,
+      "ci95": [
+        -0.304936759026444,
+        -0.12743110520281523
+      ],
+      "effect_delta": -0.6,
+      "mean_gain": -0.21618393211462963,
+      "n_pairs": 60,
+      "p_raw": 0.9999999237652202
+    }
+  }
+}

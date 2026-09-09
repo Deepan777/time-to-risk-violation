@@ -1,0 +1,48 @@
+{
+  "config": {
+    "H": 20,
+    "L": 20,
+    "eps_margin": 0.2,
+    "eps_quantile": 0.75,
+    "scale": "full"
+  },
+  "config_hash": "UNSET",
+  "dataset_checksum": "UNSET",
+  "dataset_id": "tier_a_wildtime",
+  "duration_seconds": 30.59472,
+  "ended_at": "2026-08-27T19:45:27.550414+00:00",
+  "exceptions": [],
+  "experiment": "E1_gate1_tier_a_wildtime_seed1",
+  "git_commit": "3afdfc58c9a3c9329ea81438ac6521edf796fd0e",
+  "git_dirty": true,
+  "hardware": {
+    "cpu": "AMD Ryzen 7 6800H with Radeon Graphics",
+    "cpu_count_logical": 16,
+    "cuda_available": true,
+    "gpu_compute_capability": "8.6",
+    "gpu_multiprocessors": 30,
+    "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_total_memory_bytes": 6441926656,
+    "machine": "AMD64",
+    "nvidia_driver": "596.08",
+    "os": "Windows 10 10.0.26200",
+    "python": "3.11.5",
+    "ram_total_bytes": 16361480192,
+    "torch": "2.13.0+cu126",
+    "torch_cuda_build": "12.6"
+  },
+  "hyperparameters": {},
+  "metrics": {
+    "censoring_rate": 0.3800186741363212,
+    "n_test": 241
+  },
+  "notes": [],
+  "output_path": "results\\e1_gate1\\manifest_tier_a_wildtime_seed1.json",
+  "predictor_id": "mixed",
+  "run_id": "03b19d92e2204ad8",
+  "scale": "full",
+  "seed": 1,
+  "started_at": "2026-08-27T19:44:56.955722+00:00",
+  "status": "completed",
+  "warnings": []
+}

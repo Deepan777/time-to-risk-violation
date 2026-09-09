@@ -1,0 +1,40 @@
+{
+  "archives": {
+    "air_quality": {
+      "bytes": 1543989,
+      "path": "data\\raw\\uci\\air_quality.zip",
+      "sha256": "d4a64013fb385288a8a48d9d193ca7079b2e1bbddf6f8d458feb8c08ab2b8a2a",
+      "uci_id": "360",
+      "url": "https://archive.ics.uci.edu/static/public/360/air+quality.zip"
+    },
+    "gas_drift": {
+      "bytes": 9989262,
+      "path": "data\\raw\\uci\\gas_drift.zip",
+      "sha256": "91e8f466f202e7a093d657673ce47311c3e90416f7df3057966058961c351fe4",
+      "uci_id": "224",
+      "url": "https://archive.ics.uci.edu/static/public/224/gas+sensor+array+drift+dataset.zip"
+    },
+    "gas_temp_mod": {
+      "bytes": 183298753,
+      "path": "data\\raw\\uci\\gas_temp_mod.zip",
+      "sha256": "cb5ce4a6af1a51b933d1979952d7845f0e9baac54e15a81a1e3599e8b85905d4",
+      "uci_id": "487",
+      "url": "https://archive.ics.uci.edu/static/public/487/gas+sensor+array+temperature+modulation.zip"
+    },
+    "hydraulic": {
+      "bytes": 76601704,
+      "path": "data\\raw\\uci\\hydraulic.zip",
+      "sha256": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+      "uci_id": "447",
+      "url": "https://archive.ics.uci.edu/static/public/447/condition+monitoring+of+hydraulic+systems.zip"
+    },
+    "news_popularity": {
+      "bytes": 7476401,
+      "path": "data\\raw\\uci\\news_popularity.zip",
+      "sha256": "dba2ae526f62ccef6f2f8efb53b0268319f4d0d2719bb98d88958cfe31d58a22",
+      "uci_id": "332",
+      "url": "https://archive.ics.uci.edu/static/public/332/online+news+popularity.zip"
+    }
+  },
+  "note": "Classes were fixed in configs/drift_mechanism.yaml before this ran."
+}

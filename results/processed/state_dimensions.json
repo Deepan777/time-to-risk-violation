@@ -1,0 +1,20 @@
+{
+  "constant_dims_by_stream": {
+    "air_quality": 18,
+    "cmapss": 18,
+    "elec2": 13,
+    "gas_drift": 13,
+    "gas_temp_mod": 18,
+    "huffpost": 13,
+    "insects": 13,
+    "metropt3": 13,
+    "news_popularity": 13,
+    "yearbook": 15
+  },
+  "constant_dims_max": 18,
+  "constant_dims_min": 13,
+  "n_view_blocks": 7,
+  "note": "counted from data/cache/monitored/*.pkl; never hand-typed",
+  "state_dim_classification": 87,
+  "state_dim_regression": 79
+}

@@ -1,0 +1,47 @@
+{
+  "config": {
+    "H": 20,
+    "L": 20,
+    "eps_margin": 0.2,
+    "n_quantiles": 5,
+    "n_u_streams": 16
+  },
+  "config_hash": "UNSET",
+  "dataset_checksum": "UNSET",
+  "dataset_id": "mixed",
+  "duration_seconds": 125.754002,
+  "ended_at": "2026-09-02T10:28:37.997426+00:00",
+  "exceptions": [],
+  "experiment": "age_hazard_diagnostic",
+  "git_commit": "251eb856b3d7be1a6c8715aa7c981222efeda841",
+  "git_dirty": true,
+  "hardware": {
+    "cpu": "AMD Ryzen 7 6800H with Radeon Graphics",
+    "cpu_count_logical": 16,
+    "cuda_available": true,
+    "gpu_compute_capability": "8.6",
+    "gpu_multiprocessors": 30,
+    "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_total_memory_bytes": 6441926656,
+    "machine": "AMD64",
+    "nvidia_driver": "596.08",
+    "os": "Windows 10 10.0.26200",
+    "python": "3.11.5",
+    "ram_total_bytes": 16361480192,
+    "torch": "2.13.0+cu126",
+    "torch_cuda_build": "12.6"
+  },
+  "hyperparameters": {},
+  "metrics": {
+    "u_point_biserial_r": 0.1807
+  },
+  "notes": [],
+  "output_path": "results\\gate0\\manifest_age_hazard.json",
+  "predictor_id": "xgboost",
+  "run_id": "1710e6bf8eb14d21",
+  "scale": "full",
+  "seed": 0,
+  "started_at": "2026-09-02T10:26:32.243827+00:00",
+  "status": "completed",
+  "warnings": []
+}

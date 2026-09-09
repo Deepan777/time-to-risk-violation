@@ -1,0 +1,29 @@
+{
+  "artefact_bytes": 1828532864,
+  "artefact_path": "data\\raw\\wildtime\\yearbook.pkl",
+  "artefact_sha256": "dc59f02d63c0ef6a5d0444f6237fe3bfed76ca82ab043b0235cf15388b04da6c",
+  "citation": "Yao et al., Wild-Time: A Benchmark of in-the-Wild Distribution Shift over Time, NeurIPS 2022 Datasets and Benchmarks, arXiv:2211.14238",
+  "class_balance": 0.5326037269084944,
+  "dataset_id": "wildtime_yearbook",
+  "domain": "computer vision (historical portrait photography)",
+  "family": "wildtime",
+  "input_shape": [
+    32,
+    32,
+    3
+  ],
+  "licence": "MIT",
+  "modes_concatenated": [
+    0,
+    1,
+    2
+  ],
+  "n_rows": 74378,
+  "reason_for_inclusion": "Tier A: genuine natural temporal shift with timestamp metadata; the protocol requires at least one natural-shift benchmark in every headline experiment.",
+  "shift_type": "natural temporal distribution shift (no synthetic shift applied)",
+  "source_url": "https://github.com/huaxiuyao/Wild-Time",
+  "task": "binary classification",
+  "temporal_structure": "1930-2013, 84 yearly domains",
+  "tie_breaking_rule": "year ascending, then Wild-Time stored order within the year",
+  "tier": "A"
+}

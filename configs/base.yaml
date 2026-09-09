@@ -1,0 +1,90 @@
+# PRISM-V base configuration.
+#
+# This file holds the *scientific* parameters, fixed by proposal/proposed_methodology.md and
+# proposal/experimental_protocol.md. The three files in configs/scales/ override only the
+# *cost* knobs (seeds, stream length, epochs, dataset count). A scale file must never change a
+# scientific parameter: if it did, a smoke number and a full number would not be measuring the
+# same quantity.
+#
+# `scale: full` is the default because `full` is the protocol as specified. smoke and dev are
+# explicit downgrades, and only `full` records may reach the manuscript.
+
+scale: full
+project: prismv
+
+# ---------------------------------------------------------------- stream construction
+stream:
+  window_size: 200            # samples per evaluation window
+  stride: 200                 # non-overlapping windows
+  pre_deployment_frac: 0.30   # fraction of the stream used to fit and freeze the predictor
+  label_delay_windows: 1      # delta: matured labels enter s^fb only from window t+delta
+  n_windows: 400              # synthetic streams only; real streams use their own length
+
+# ---------------------------------------------------------------- the estimand
+validity:
+  H: 20                       # horizon budget, in windows. Gate 1 tests h in {1,5,10}, so H >= 10.
+  L: 20                       # encoder context length
+  eps: null                   # absolute SLA if the dataset supplies one; else null -> quantile rule
+  eps_quantile: 0.75          # D18/D21: eps = quantile_q(pre-deployment risks) + eps_margin
+  eps_margin: 0.05            # operational tolerance above commissioned performance
+  min_events: 30              # refuse to fit below this many uncensored events (impl. plan sec. 5)
+
+# ---------------------------------------------------------------- chronological splits
+# Origin-level split per stream with a gap of H windows between segments, so no training origin's
+# horizon overlaps the test period (experimental_protocol.md section 5).
+splits:
+  train_frac: 0.50
+  cal_frac: 0.20
+  # test is the remainder
+  gap_windows: null           # null means "use validity.H"; never set below H
+
+# ---------------------------------------------------------------- deployment state s_t
+monitoring:
+  blocks: [pred, rep, unc, dist, fb, ctx, adapt]
+  knn_k: 10
+  pca_components: 8
+  trailing_window: 5          # for volatility features
+  mmd_bandwidth: median       # median heuristic, computed on the REFERENCE window only
+  psi_bins: 10
+  feedback_window: 5          # k matured windows for the rolling empirical risk
+
+# ---------------------------------------------------------------- model (infrastructure, not contribution)
+model:
+  encoder: gru                # gru | tcn | transformer | ssm  (ablation sweeps this)
+  hidden: 64
+  layers: 1
+  dropout: 0.10
+  horizon_embed_dim: 16
+  objective: joint            # risk_only | survival_only | joint  (none assumed best)
+  alpha: 1.0                  # weight on L_risk
+  beta: 0.10                  # weight on the monotonicity penalty
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  batch_size: 64
+  epochs: 100
+  patience: 10                # early stopping on CALIBRATION IPCW-IBS, never on test
+
+# ---------------------------------------------------------------- calibration layer
+calibration:
+  method: isotonic            # isotonic | conformal | none
+  alpha: 0.10                 # target miscoverage for the conformal horizon bound
+
+# ---------------------------------------------------------------- warning operating point
+# (h_warn, pi) are selected on the CALIBRATION split only. Test data never touches this choice.
+warning:
+  h_warn: 5
+  pi: 0.50
+
+# ---------------------------------------------------------------- statistics
+statistics:
+  seeds: [0, 1, 2, 3, 4]
+  bootstrap_resamples: 2000
+  block_bootstrap_by: stream  # respect temporal dependence
+  alpha: 0.05
+  cliffs_delta_threshold: 0.147   # the pre-set small-effect floor; "beats" requires both
+
+# ---------------------------------------------------------------- paths
+paths:
+  data: data
+  results: results
+  logs: logs

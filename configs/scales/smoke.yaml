@@ -1,0 +1,27 @@
+# smoke — tiny, minutes, correctness only.
+#
+# Purpose: run the whole pipeline end to end, through every stage including manuscript generation,
+# before launching anything expensive. A complete but tiny set of real results is the cheapest way
+# to find the bugs that would otherwise waste a hundred GPU-hours.
+#
+# NO SMOKE NUMBER MAY ENTER THE MANUSCRIPT. The scale travels in every manifest and
+# scripts/14_generate_tables_figures.py refuses any record whose scale is not `full`.
+#
+# Overrides cost knobs ONLY. Scientific parameters stay at their base values.
+
+extends: ../base.yaml
+scale: smoke
+
+stream:
+  n_windows: 120              # enough to contain several crossings at H=20, still seconds to build
+
+validity:
+  min_events: 5               # a 120-window stream cannot supply 30 events
+
+model:
+  epochs: 5
+  patience: 3
+
+statistics:
+  seeds: [0]
+  bootstrap_resamples: 100

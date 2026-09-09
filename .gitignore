@@ -1,0 +1,26 @@
+# Environment
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Data: large, regenerable from provenance records in data/metadata/
+data/raw/
+data/processed/
+data/streams/
+data/cache/
+
+# Results: raw per-run artefacts are large; metrics/manifests ARE tracked (see below)
+results/raw/**/state.parquet
+results/raw/**/*.pt
+results/raw/**/*.ckpt
+checkpoints/
+
+# Logs
+logs/
+*.log
+
+# OS
+Thumbs.db
+.DS_Store

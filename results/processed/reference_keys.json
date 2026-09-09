@@ -1,0 +1,346 @@
+[
+ {
+  "key": "angelopoulos2022conformal",
+  "idx": 0,
+  "doi": "10.48550/arXiv.2208.02814",
+  "arxiv": "2208.02814",
+  "src": "arXiv API",
+  "ref": "Angelopoulos, A. N., Bates, S., Fisch, A., Lei, L. and Schuster, T. (2022) Conformal Risk Control. arXiv:2208.02814. doi:10.48550/arXiv.2208.02814. (Published at ICLR 2024.)"
+ },
+ {
+  "key": "baek2022agreement",
+  "idx": 1,
+  "doi": "10.48550/arXiv.2206.13089",
+  "arxiv": "2206.13089",
+  "src": "arXiv API",
+  "ref": "Baek, C., Jiang, Y., Raghunathan, A. and Kolter, J. Z. (2022) Agreement-on-the-Line: Predicting the Performance of Neural Networks under Distribution Shift. arXiv:2206.13089. doi:10.48550/arXiv.2206.13089. (Published at NeurIPS 2022.)"
+ },
+ {
+  "key": "bai2022temporal",
+  "idx": 2,
+  "doi": "10.48550/arXiv.2205.10664",
+  "arxiv": "2205.10664",
+  "src": "arXiv API",
+  "ref": "Bai, G., Ling, C. and Zhao, L. (2022) Temporal Domain Generalization with Drift-Aware Dynamic Neural Networks. arXiv:2205.10664. doi:10.48550/arXiv.2205.10664. (Published at ICLR 2023.)"
+ },
+ {
+  "key": "bates2021distribution",
+  "idx": 3,
+  "doi": "10.1145/3478535",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Bates, S., Angelopoulos, A., Lei, L., Malik, J. and Jordan, M. (2021) Distribution-free, Risk-controlling Prediction Sets. Journal of the ACM. doi:10.1145/3478535."
+ },
+ {
+  "key": "bayram2022concept",
+  "idx": 4,
+  "doi": "10.1016/j.knosys.2022.108632",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Bayram, F., Ahmed, B. S. and Kassler, A. (2022) From concept drift to model degradation: An overview on performance-aware drift detectors. Knowledge-Based Systems, 245, 108632. doi:10.1016/j.knosys.2022.108632."
+ },
+ {
+  "key": "biaek2024estimating",
+  "idx": 5,
+  "doi": "10.48550/arXiv.2401.08348",
+  "arxiv": "2401.08348",
+  "src": "arXiv API",
+  "ref": "Bia\u0142ek, J., Kivim\u00e4ki, J., Kuberski, W. and Perrakis, N. (2024) Estimating Model Performance Under Covariate Shift Without Labels. arXiv:2401.08348. doi:10.48550/arXiv.2401.08348."
+ },
+ {
+  "key": "bifet2007learning",
+  "idx": 6,
+  "doi": "10.1137/1.9781611972771.42",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Bifet, A. and Gavald\u00e0, R. (2007) Learning from Time-Changing Data with Adaptive Windowing. In: Proceedings of the 2007 SIAM International Conference on Data Mining. doi:10.1137/1.9781611972771.42."
+ },
+ {
+  "key": "cai2026diagnosing",
+  "idx": 7,
+  "doi": "10.1287/opre.2023.0217",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Cai, T., Namkoong, H. and Yadlowsky, S. (2026) Diagnosing Model Performance Under Distribution Shift. Operations Research. doi:10.1287/opre.2023.0217."
+ },
+ {
+  "key": "chen2016proactive",
+  "idx": 8,
+  "doi": "10.1109/IJCNN.2016.7727279",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Chen, K., Koh, Y. S. and Riddle, P. (2016) Proactive drift detection: Predicting concept drifts in data streams using probabilistic networks. In: 2016 International Joint Conference on Neural Networks (IJCNN). doi:10.1109/IJCNN.2016.7727279."
+ },
+ {
+  "key": "corbiere2019addressing",
+  "idx": 9,
+  "doi": "10.48550/arXiv.1910.04851",
+  "arxiv": "1910.04851",
+  "src": "arXiv API",
+  "ref": "Corbi\u00e8re, C., Thome, N., Bar-Hen, A., Cord, M. and P\u00e9rez, P. (2019) Addressing Failure Prediction by Learning Model Confidence. arXiv:1910.04851. doi:10.48550/arXiv.1910.04851. (Published at NeurIPS 2019.)"
+ },
+ {
+  "key": "daftry2016introspective",
+  "idx": 10,
+  "doi": "10.1109/IROS.2016.7759279",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Daftry, S., Zeng, S., Bagnell, J. A. and Hebert, M. (2016) Introspective perception: Learning to predict failures in vision systems. In: 2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). doi:10.1109/IROS.2016.7759279."
+ },
+ {
+  "key": "davis2020detection",
+  "idx": 11,
+  "doi": "10.1016/j.jbi.2020.103611",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Davis, S. E., Greevy, R. A., Lasko, T. A., Walsh, C. G. and Matheny, M. E. (2020) Detection of calibration drift in clinical prediction models to inform model updating. Journal of Biomedical Informatics, 112, 103611. doi:10.1016/j.jbi.2020.103611."
+ },
+ {
+  "key": "silva2024prospective",
+  "idx": 12,
+  "doi": "10.48550/arXiv.2411.00109",
+  "arxiv": "2411.00109",
+  "src": "arXiv API",
+  "ref": "De Silva, A., Ramesh, R., Yang, R., Yu, S., Vogelstein, J. T. and Chaudhari, P. (2024) Prospective Learning: Learning for a Dynamic Future. arXiv:2411.00109. doi:10.48550/arXiv.2411.00109. (Published at NeurIPS 2024.)"
+ },
+ {
+  "key": "dong2024efficiently",
+  "idx": 13,
+  "doi": "10.14778/3681954.3681984",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Dong, S., Wang, Q., Sahri, S., Palpanas, T. and Srivastava, D. (2024) Efficiently Mitigating the Impact of Data Drift on Machine Learning Pipelines. Proceedings of the VLDB Endowment. doi:10.14778/3681954.3681984."
+ },
+ {
+  "key": "elder2020learning",
+  "idx": 14,
+  "doi": "10.48550/arXiv.2012.08625",
+  "arxiv": "2012.08625",
+  "src": "arXiv API",
+  "ref": "Elder, B., Arnold, M., Murthi, A. and Navratil, J. (2020) Learning Prediction Intervals for Model Performance. arXiv:2012.08625. doi:10.48550/arXiv.2012.08625. (Published at AAAI 2021.)"
+ },
+ {
+  "key": "gama2014survey",
+  "idx": 15,
+  "doi": "10.1145/2523813",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Gama, J., \u017dliobait\u0117, I., Bifet, A., Pechenizkiy, M. and Bouchachia, A. (2014) A survey on concept drift adaptation. ACM Computing Surveys. doi:10.1145/2523813."
+ },
+ {
+  "key": "garg2022leveraging",
+  "idx": 16,
+  "doi": "10.48550/arXiv.2201.04234",
+  "arxiv": "2201.04234",
+  "src": "arXiv API",
+  "ref": "Garg, S., Balakrishnan, S., Lipton, Z. C., Neyshabur, B. and Sedghi, H. (2022) Leveraging Unlabeled Data to Predict Out-of-Distribution Performance. arXiv:2201.04234. doi:10.48550/arXiv.2201.04234. (Published at ICLR 2022.)"
+ },
+ {
+  "key": "gibbs2021adaptive",
+  "idx": 17,
+  "doi": "10.48550/arXiv.2106.00170",
+  "arxiv": "2106.00170",
+  "src": "arXiv API",
+  "ref": "Gibbs, I. and Cand\u00e8s, E. (2021) Adaptive Conformal Inference Under Distribution Shift. arXiv:2106.00170. doi:10.48550/arXiv.2106.00170. (Published at NeurIPS 2021.)"
+ },
+ {
+  "key": "guerrerocano2025anticipating",
+  "idx": 18,
+  "doi": "10.1007/s10994-025-06945-4",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Guerrero Cano, J. V., Aguiar, G. J. and Cano, A. (2025) Anticipating to Change: A Proactive Approach for Concept Drift Adaptation in Data Streams. Machine Learning, 115. doi:10.1007/s10994-025-06945-4."
+ },
+ {
+  "key": "hinder2024one",
+  "idx": 19,
+  "doi": "10.3389/frai.2024.1330257",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Hinder, F., Vaquet, V. and Hammer, B. (2024) One or two things we know about concept drift \u2014 a survey on monitoring in evolving environments. Part A: detecting concept drift. Frontiers in Artificial Intelligence. doi:10.3389/frai.2024.1330257."
+ },
+ {
+  "key": "koh2020wilds",
+  "idx": 20,
+  "doi": "10.48550/arXiv.2012.07421",
+  "arxiv": "2012.07421",
+  "src": "arXiv API",
+  "ref": "Koh, P. W., Sagawa, S., Marklund, H., Xie, S. M., Zhang, M., Balsubramani, A., Hu, W., Yasunaga, M. et al. (2020) WILDS: A Benchmark of in-the-Wild Distribution Shifts. arXiv:2012.07421. doi:10.48550/arXiv.2012.07421. (Published at ICML 2021; 22 authors.)"
+ },
+ {
+  "key": "lee2023important",
+  "idx": 21,
+  "doi": "10.1145/3539618.3591934",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Lee, H., Yoo, S., Lee, D. and Kim, J. (2023) How Important is Periodic Model Update in Recommender System? In: Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval. doi:10.1145/3539618.3591934."
+ },
+ {
+  "key": "li2022ddg",
+  "idx": 22,
+  "doi": "10.1609/aaai.v36i4.20327",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Li, W., Yang, X., Liu, W., Xia, Y. and Bian, J. (2022) DDG-DA: Data Distribution Generation for Predictable Concept Drift Adaptation. In: Proceedings of the Thirty-Sixth AAAI Conference on Artificial Intelligence."
+ },
+ {
+  "key": "li2025time",
+  "idx": 23,
+  "doi": "10.48550/arXiv.2510.02712",
+  "arxiv": "2510.02712",
+  "src": "arXiv API",
+  "ref": "Li, Y., Krishnan, R. and Padman, R. (2025) Time-To-Inconsistency: A Survival Analysis of Large Language Model Robustness to Adversarial Attacks. arXiv:2510.02712. doi:10.48550/arXiv.2510.02712."
+ },
+ {
+  "key": "liang2023comprehensive",
+  "idx": 24,
+  "doi": "10.48550/arXiv.2303.15361",
+  "arxiv": "2303.15361",
+  "src": "arXiv API",
+  "ref": "Liang, J., He, R. and Tan, T. (2023) A Comprehensive Survey on Test-Time Adaptation under Distribution Shifts. arXiv:2303.15361. doi:10.48550/arXiv.2303.15361. (Published in International Journal of Computer Vision, 2024.)"
+ },
+ {
+  "key": "lu2018learning",
+  "idx": 25,
+  "doi": "10.1109/TKDE.2018.2876857",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Lu, J., Liu, A., Dong, F., Gu, F., Gama, J. and Zhang, G. (2018) Learning under Concept Drift: A Review. IEEE Transactions on Knowledge and Data Engineering. doi:10.1109/TKDE.2018.2876857."
+ },
+ {
+  "key": "maggio2022performance",
+  "idx": 26,
+  "doi": "10.48550/arXiv.2206.10697",
+  "arxiv": "2206.10697",
+  "src": "arXiv API",
+  "ref": "Maggio, S., Bouvier, V. and Dreyfus-Schmidt, L. (2022) Performance Prediction Under Dataset Shift. arXiv:2206.10697. doi:10.48550/arXiv.2206.10697. (Published at ICPR 2022.)"
+ },
+ {
+  "key": "mahadevan2024cost",
+  "idx": 27,
+  "doi": "10.1016/j.knosys.2024.111610",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Mahadevan, A. and Mathioudakis, M. (2024) Cost-aware retraining for machine learning. Knowledge-Based Systems. doi:10.1016/j.knosys.2024.111610."
+ },
+ {
+  "key": "melo2023model",
+  "idx": 28,
+  "doi": "10.1007/978-3-031-40725-3_5",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Melo, F. A., de Carvalho, A. C. P. L. F., Lorena, A. C. and Garcia, L. P. F. (2023) Model Performance Prediction: A Meta-Learning Approach for Concept Drift Detection. In: Hybrid Artificial Intelligent Systems, Lecture Notes in Computer Science 14001. doi:10.1007/978-3-031-40725-3_5."
+ },
+ {
+  "key": "miller2021accuracy",
+  "idx": 29,
+  "doi": "10.48550/arXiv.2107.04649",
+  "arxiv": "2107.04649",
+  "src": "arXiv API",
+  "ref": "Miller, J., Taori, R., Raghunathan, A., Sagawa, S., Koh, P. W., Shankar, V. et al. (2021) Accuracy on the Line: On the Strong Correlation Between Out-of-Distribution and In-Distribution Generalization. arXiv:2107.04649. doi:10.48550/arXiv.2107.04649. (Published at ICML 2021; 9 authors.)"
+ },
+ {
+  "key": "nguyen2025reliably",
+  "idx": 30,
+  "doi": "10.48550/arXiv.2506.05047",
+  "arxiv": "2506.05047",
+  "src": "arXiv API",
+  "ref": "Nguyen, V., Shui, C., Giri, V., Arya, S., Verma, A., Razak, F. and Krishnan, R. G. (2025) Reliably Detecting Model Failures in Deployment Without Labels. arXiv:2506.05047. doi:10.48550/arXiv.2506.05047."
+ },
+ {
+  "key": "ovadia2019can",
+  "idx": 31,
+  "doi": "10.48550/arXiv.1906.02530",
+  "arxiv": "1906.02530",
+  "src": "arXiv API",
+  "ref": "Ovadia, Y., Fertig, E., Ren, J., Nado, Z., Sculley, D., Nowozin, S., Dillon, J. V., Lakshminarayanan, B. and Snoek, J. (2019) Can You Trust Your Model's Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift. arXiv:1906.02530. doi:10.48550/arXiv.1906.02530. (Published at NeurIPS 2019.)"
+ },
+ {
+  "key": "rabanser2018failing",
+  "idx": 32,
+  "doi": "10.48550/arXiv.1810.11953",
+  "arxiv": "1810.11953",
+  "src": "arXiv API",
+  "ref": "Rabanser, S., G\u00fcnnemann, S. and Lipton, Z. C. (2018) Failing Loudly: An Empirical Study of Methods for Detecting Dataset Shift. arXiv:1810.11953. doi:10.48550/arXiv.1810.11953. (Published at NeurIPS 2019.)"
+ },
+ {
+  "key": "rahman2026modeling",
+  "idx": 33,
+  "doi": null,
+  "arxiv": "2604.02351",
+  "src": "arXiv API",
+  "ref": "Rahman, N. and Tabassum, N. (2026) Modeling and Controlling Deployment Reliability under Temporal Distribution Shift. arXiv:2604.02351. Preprint \u2014 not peer reviewed."
+ },
+ {
+  "key": "florence2025retrain",
+  "idx": 34,
+  "doi": "10.48550/arXiv.2505.14903",
+  "arxiv": "2505.14903",
+  "src": "arXiv API",
+  "ref": "Regol, F., Schwinn, L., Sprague, K., Coates, M. and Markovich, T. (2025) When to retrain a machine learning model. arXiv:2505.14903. doi:10.48550/arXiv.2505.14903. Preprint."
+ },
+ {
+  "key": "sethi2025proactive",
+  "idx": 35,
+  "doi": "10.1007/978-3-032-06118-8_16",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Sethi, A., Gupta, P., Kansotia, S., Kant, K. and Srivasatava, N. (2025) Proactive Detection of Model Degradation in Financial Fraud Prediction with Delayed Labels. In: Machine Learning and Knowledge Discovery in Databases: Applied Data Science Track (ECML PKDD 2025), Lecture Notes in Computer Science. doi:10.1007/978-3-032-06118-8_16."
+ },
+ {
+  "key": "vela2022temporal",
+  "idx": 36,
+  "doi": "10.1038/s41598-022-15245-z",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Vela, D., Sharp, A., Zhang, R., Nguyen, T., Hoang, A. and Pianykh, O. S. (2022) Temporal quality degradation in AI models. Scientific Reports. doi:10.1038/s41598-022-15245-z."
+ },
+ {
+  "key": "verachtert2023scheduling",
+  "idx": 37,
+  "doi": "10.1016/j.mlwa.2023.100455",
+  "arxiv": null,
+  "src": "Crossref content negotiation (doi.org)",
+  "ref": "Verachtert, R., Jeunen, O. and Goethals, B. (2023) Scheduling on a budget: Avoiding stale recommendations with timely updates. Machine Learning with Applications. doi:10.1016/j.mlwa.2023.100455."
+ },
+ {
+  "key": "wang2026certified",
+  "idx": 38,
+  "doi": "10.48550/arXiv.2607.01537",
+  "arxiv": "2607.01537",
+  "src": "arXiv API",
+  "ref": "Wang, H. (2026) Certified World Models as Sensing Clocks: Drift-Aware Deadlines for Active Perception. arXiv:2607.01537. doi:10.48550/arXiv.2607.01537. Preprint \u2014 not peer reviewed."
+ },
+ {
+  "key": "yao2022wild",
+  "idx": 39,
+  "doi": "10.48550/arXiv.2211.14238",
+  "arxiv": "2211.14238",
+  "src": "arXiv API",
+  "ref": "Yao, H., Choi, C., Cao, B., Lee, Y., Koh, P. W. and Finn, C. (2022) Wild-Time: A Benchmark of in-the-Wild Distribution Shift over Time. arXiv:2211.14238. doi:10.48550/arXiv.2211.14238. (Published in the NeurIPS 2022 Datasets and Benchmarks track.)"
+ },
+ {
+  "key": "yu2022predicting",
+  "idx": 40,
+  "doi": "10.48550/arXiv.2202.05834",
+  "arxiv": "2202.05834",
+  "src": "arXiv API",
+  "ref": "Yu, Y., Yang, Z., Wei, A., Ma, Y. and Steinhardt, J. (2022) Predicting Out-of-Distribution Error with the Projection Norm. arXiv:2202.05834. doi:10.48550/arXiv.2202.05834. (Published at ICML 2022.)"
+ },
+ {
+  "key": "zhang2026prediction",
+  "idx": 41,
+  "doi": null,
+  "arxiv": "2602.02229",
+  "src": "arXiv API",
+  "ref": "Zhang, G., Cai, Y., Yu, G. and Simeone, O. (2026) Prediction-Powered Risk Monitoring of Deployed Models for Detecting Harmful Distribution Shifts. arXiv:2602.02229. Preprint \u2014 not peer reviewed."
+ },
+ {
+  "key": "zhao2024proactive",
+  "idx": 42,
+  "doi": "10.48550/arXiv.2412.08435",
+  "arxiv": "2412.08435",
+  "src": "arXiv API",
+  "ref": "Zhao, L. and Shen, Y. (2024) Proactive Model Adaptation Against Concept Drift for Online Time Series Forecasting. arXiv:2412.08435. doi:10.48550/arXiv.2412.08435. (Published at ACM SIGKDD 2025; doi:10.1145/3690624.3709210.)"
+ }
+]

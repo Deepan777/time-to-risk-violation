@@ -1,0 +1,47 @@
+{
+  "config": {
+    "H": 20,
+    "L": 20,
+    "n_streams": 16,
+    "scale": "full"
+  },
+  "config_hash": "UNSET",
+  "dataset_checksum": "UNSET",
+  "dataset_id": "synthetic_sea_U",
+  "duration_seconds": 5.61037,
+  "ended_at": "2026-08-28T03:04:24.422109+00:00",
+  "exceptions": [],
+  "experiment": "gate0_two_head_seed4",
+  "git_commit": "1892420cd05c3a4a6244133a4c00c9b277fd9cb1",
+  "git_dirty": true,
+  "hardware": {
+    "cpu": "AMD Ryzen 7 6800H with Radeon Graphics",
+    "cpu_count_logical": 16,
+    "cuda_available": true,
+    "gpu_compute_capability": "8.6",
+    "gpu_multiprocessors": 30,
+    "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_total_memory_bytes": 6441926656,
+    "machine": "AMD64",
+    "nvidia_driver": "596.08",
+    "os": "Windows 10 10.0.26200",
+    "python": "3.11.5",
+    "ram_total_bytes": 16361480192,
+    "torch": "2.13.0+cu126",
+    "torch_cuda_build": "12.6"
+  },
+  "hyperparameters": {},
+  "metrics": {
+    "antolini_c": 0.5750115789685656,
+    "ipcw_ibs": 0.1620804462284891
+  },
+  "notes": [],
+  "output_path": "results\\gate0\\manifest_two_head_seed4.json",
+  "predictor_id": "xgboost",
+  "run_id": "d76c0dd4975442a4",
+  "scale": "full",
+  "seed": 4,
+  "started_at": "2026-08-28T03:04:18.812415+00:00",
+  "status": "completed",
+  "warnings": []
+}

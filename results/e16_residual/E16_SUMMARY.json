@@ -1,0 +1,177 @@
+{
+  "eps_margin": 0.2,
+  "excluded_families": {
+    "tier_a_wildtime_text": "calibration split is empty after applying a gap of 20 windows. The streams are too short for H=20: each needs comfortably more than 40 origins."
+  },
+  "families": {
+    "prismv_first_passage": {
+      "tier_a_wildtime": {
+        "family_passes": false,
+        "mae_mean_by_horizon": {
+          "h1": 0.08133447226909805,
+          "h10": 0.1007062535961422,
+          "h5": 0.09413790291232685
+        },
+        "mae_sd_by_horizon": {
+          "h1": 0.00621594100621177,
+          "h10": 0.0041308302325138635,
+          "h5": 0.002460241766159639
+        },
+        "n_beaten_by_horizon": {
+          "h1": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "h10": [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "h5": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "n_seeds": 5,
+        "seeds_passing": 0
+      },
+      "tier_b_tabular": {
+        "family_passes": false,
+        "mae_mean_by_horizon": {
+          "h1": 0.07478002074691985,
+          "h10": 0.07562483300765356,
+          "h5": 0.10440378149350485
+        },
+        "mae_sd_by_horizon": {
+          "h1": 0.006570634835869138,
+          "h10": 0.002413293912525625,
+          "h5": 0.00557957100747225
+        },
+        "n_beaten_by_horizon": {
+          "h1": [
+            1,
+            2,
+            2,
+            1,
+            0
+          ],
+          "h10": [
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "h5": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "n_seeds": 5,
+        "seeds_passing": 0
+      }
+    },
+    "prismv_two_head": {
+      "tier_a_wildtime": {
+        "family_passes": false,
+        "mae_mean_by_horizon": {
+          "h1": 0.0780301932454171,
+          "h10": 0.0982620713160426,
+          "h5": 0.09353430917084479
+        },
+        "mae_sd_by_horizon": {
+          "h1": 0.0036850254614454975,
+          "h10": 0.0024946759576378206,
+          "h5": 0.005514697740893601
+        },
+        "n_beaten_by_horizon": {
+          "h1": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "h10": [
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "h5": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "n_seeds": 5,
+        "seeds_passing": 0
+      },
+      "tier_b_tabular": {
+        "family_passes": false,
+        "mae_mean_by_horizon": {
+          "h1": 0.08901031414667766,
+          "h10": 0.07636155005958345,
+          "h5": 0.10469365224242211
+        },
+        "mae_sd_by_horizon": {
+          "h1": 0.007901773595857442,
+          "h10": 0.006052247163302832,
+          "h5": 0.00787430125313349
+        },
+        "n_beaten_by_horizon": {
+          "h1": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "h10": [
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          "h5": [
+            1,
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        "n_seeds": 5,
+        "seeds_passing": 0
+      }
+    }
+  },
+  "prismv_first_passage_beats_all_on_n_families": 0,
+  "prismv_first_passage_families_passing": 0,
+  "prismv_two_head_beats_all_on_n_families": 0,
+  "prismv_two_head_families_passing": 0,
+  "rule": "beats EVERY naive baseline at h in {1,5,10} on >= 2 families; 'beats' = Holm-corrected p <= 0.05 AND |delta| >= 0.147",
+  "scale": "full",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

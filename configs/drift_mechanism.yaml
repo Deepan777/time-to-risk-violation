@@ -1,0 +1,254 @@
+# Drift-mechanism classification, fixed in advance.
+#
+# Governed by proposal/PREREGISTRATION_drift_mechanism.md section 2. Every assignment below was
+# made from the data provider's own documentation, fetched as metadata only, BEFORE any of these
+# datasets was downloaded, loaded, or run. The `provider_quote` field is the exact sentence the
+# assignment rests on; if the quote does not state a mechanism, the class is AMBIGUOUS and the
+# dataset is excluded rather than argued into a class.
+#
+# Committed before the confirmatory experiment executes. Do not edit after results exist.
+
+rule:
+  PHYSICAL: >
+    The provider's documentation attributes the drift to a physical or instrumental process --
+    sensor ageing or fouling, component wear, calibration loss, or a controlled physical covariate
+    (temperature, load, pressure). Stated by the provider, not inferred by us.
+  SOCIAL: >
+    The drift arises from human behaviour, culture, editorial choice, fashion or market sentiment,
+    with no accumulating physical substrate.
+  AMBIGUOUS: >
+    Cannot be assigned from documentation alone. Excluded from the confirmatory test.
+
+# ---------------------------------------------------------------- already in hand (section 2)
+incumbent:
+  insects:
+    class: PHYSICAL
+    role: HYPOTHESIS_GENERATING          # disqualified as confirmatory evidence
+    provider_quote: >
+      Drift induced by a controlled temperature change altering insect wing-beat frequency
+      (Souza et al., DMKD 2020).
+  yearbook:
+    class: SOCIAL
+    role: CONFIRMATORY_COMPARATOR
+    provider_quote: >
+      Photographic convention, hairstyle and styling change across eight decades of US high-school
+      yearbook portraits.
+  huffpost:
+    class: SOCIAL
+    role: CONFIRMATORY_COMPARATOR
+    provider_quote: >
+      Editorial category prevalence and news vocabulary change over time.
+  elec2:
+    class: AMBIGUOUS
+    role: EXCLUDED
+    provider_quote: >
+      Electricity spot price relative to a moving average; physical demand cycles entangled with
+      market behaviour. No drift mechanism stated by the provider.
+
+# ---------------------------------------------------------------- new, for the confirmatory test
+# Fetched as UCI API metadata only. Not yet downloaded at the time this file was committed.
+confirmatory:
+  gas_drift:
+    class: PHYSICAL
+    measured: true
+    role: CONFIRMATORY_PRIMARY
+    order: 1
+    source_id: UCI-224
+    source_url: https://archive.ics.uci.edu/dataset/224/gas+sensor+array+drift+dataset
+    n_instances_declared: 13910
+    provider_quote: >
+      "The primary purpose of providing this dataset is to make it freely accessible on-line to the
+      chemo-sensor research community and artificial intelligence to develop strategies to cope
+      with sensor/concept drift." Gathered January 2007 to February 2011 (36 months) from 16
+      chemical sensors.
+    licence: >
+      Research use only; commercial purposes fully excluded (stated by the provider). Used here
+      for academic research, which the licence permits.
+    citation: >
+      Vergara et al., Chemical gas sensor drift compensation using classifier ensembles,
+      Sensors and Actuators B, 2012.
+
+  air_quality:
+    class: PHYSICAL
+    measured: true
+    role: CONFIRMATORY_PRIMARY
+    order: 2
+    source_id: UCI-360
+    source_url: https://archive.ics.uci.edu/dataset/360/air+quality
+    n_instances_declared: 9358
+    provider_quote: >
+      "Evidences of cross-sensitivities as well as both concept and sensor drifts are present as
+      described in De Vito et al., Sens. And Act. B, Vol. 129,2,2008 (citation required) eventually
+      affecting sensors concentration estimation capabilities." Metal-oxide sensor array on the
+      field for one year, March 2004 to February 2005.
+    licence: >
+      Research use only; commercial purposes fully excluded (stated by the provider).
+    citation: >
+      De Vito et al., On field calibration of an electronic nose for benzene estimation in an urban
+      pollution monitoring scenario, Sensors and Actuators B, 2008.
+
+  gas_temp_mod:
+    class: PHYSICAL
+    measured: true
+    role: CONFIRMATORY_PRIMARY
+    order: 3
+    source_id: UCI-487
+    source_url: https://archive.ics.uci.edu/dataset/487/gas+sensor+array+temperature+modulation
+    n_instances_declared: 4095000
+    provider_quote: >
+      "The operating temperature of the sensors was controlled by the built-in heater, which
+      voltage was modulated in the range 0.2-0.9 V in cycles of 20 and 25 s." 14 temperature-
+      modulated MOX gas sensors exposed for three weeks; a controlled physical covariate driving
+      the observable feature distribution.
+    licence: >
+      Research use only; commercial purposes fully excluded (stated by the provider).
+    citation: >
+      Burgues and Marco, Multivariate estimation of the limit of detection by orthogonal partial
+      least squares in temperature-modulated MOX sensors, Analytica Chimica Acta, 2018.
+
+  # Pre-declared reserve, used ONLY if a primary above proves unusable under the D26 rule
+  # (< 100 valid origins, or censoring rate outside (0, 0.6)). Reserves are consumed in `order`.
+  hydraulic:
+    class: PHYSICAL
+    measured: true
+    role: CONFIRMATORY_RESERVE
+    order: 4
+    source_id: UCI-447
+    source_url: https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems
+    n_instances_declared: 2205
+    provider_quote: >
+      "The system cyclically repeats constant load cycles (duration 60 seconds) and measures
+      process values such as pressures, volume flows and temperatures while the condition of four
+      hydraulic components (cooler, valve, pump and accumulator) is quantitatively varied."
+    known_risk: >
+      Only 2205 cycles. May fail the D26 origin-count rule. Declared here so that using it is a
+      pre-committed fallback, not a post-hoc substitution.
+    licence: Research use (UCI); citation required.
+    citation: >
+      Helwig, Pignanelli and Schutze, Condition monitoring of a complex hydraulic system using
+      multivariate statistics, IEEE I2MTC, 2015.
+
+  news_popularity:
+    class: SOCIAL
+    measured: true
+    role: CONFIRMATORY_COMPARATOR
+    order: 5
+    source_id: UCI-332
+    source_url: https://archive.ics.uci.edu/dataset/332/online+news+popularity
+    n_instances_declared: 39797
+    provider_quote: >
+      "This dataset summarizes a heterogeneous set of features about articles published by Mashable
+      in a period of two years. The goal is to predict the number of shares in social networks
+      (popularity)." Audience sharing behaviour and editorial output; no physical substrate.
+    licence: >
+      Derived statistics only, original content rights retained by Mashable; UCI research use,
+      citation required.
+    citation: >
+      Fernandes, Vinagre and Cortez, A proactive intelligent decision support system for predicting
+      the popularity of online news, EPIA, 2015.
+
+# CORRECTION (2026-09-02, after the run): the `measured` flag was written only on the addendum
+# entries below, so the measured-only reading that addendum 1 requires came back empty even though
+# addendum 1's own text names gas_temp_mod as one of the two measured datasets. The flag is added
+# above to match that text. This is bookkeeping, not a reclassification: no dataset's PHYSICAL or
+# SOCIAL class changes, and every one of these is a real instrument or a real archive of articles.
+# Recorded here rather than silently corrected.
+
+# ---------------------------------------------------------------- addendum 1 (2026-09-02)
+# See proposal/PREREGISTRATION_drift_mechanism_ADDENDUM_1.md. Added AFTER gas_drift, air_quality
+# and hydraulic were screened out on the pre-registered usability rule D26 and the windowing rule,
+# and BEFORE either archive below was downloaded. No model had been fitted on any candidate at the
+# time this section was committed, so nothing here can have been chosen on an outcome.
+
+added_screen:
+  S1_min_rows: 150000
+  reason: >
+    The original selection screened candidates on drift mechanism and not on length. gas_drift
+    (13910 rows) and air_quality (7393 rows) yield fewer than 100 valid origins for that reason
+    alone. S1 reaches the same verdicts before download rather than after.
+
+confirmatory_addendum:
+  metropt3:
+    class: PHYSICAL
+    role: CONFIRMATORY_PRIMARY
+    order: 6
+    measured: true
+    source_id: UCI-791
+    source_url: https://archive.ics.uci.edu/dataset/791/metropt+3+dataset
+    n_instances_declared: 1516948
+    provider_quote: >
+      "From a metro train in an operational context, readings from pressure, temperature, motor
+      current, and air intake valves were collected from a compressor's Air Production Unit (APU)."
+      The provider supplies dated failure reports: four air-leak failures with severity and the
+      maintenance dates that followed.
+    target_rule: >
+      D21 screen. Features are the seven analog channels. The target is the digital channel with a
+      base rate inside [0.05, 0.95] whose maximum absolute correlation with any single analog
+      channel is lowest. Recorded in the loader.
+    licence: UCI research use; citation required.
+    citation: >
+      Veloso et al., The MetroPT dataset for predictive maintenance, Scientific Data, 2022.
+
+  cmapss:
+    class: PHYSICAL
+    role: CONFIRMATORY_PRIMARY
+    order: 7
+    measured: false                      # SIMULATOR-GENERATED -- binding consequence below
+    source_id: NASA-CMAPSS-FD002
+    source_url: https://phm-datasets.s3.amazonaws.com/NASA/6.+Turbofan+Engine+Degradation+Simulation+Data+Set.zip
+    n_instances_declared: 53759
+    provider_quote: >
+      Engine degradation simulated by C-MAPSS with damage propagation through turbofan components;
+      each unit runs from a healthy state to failure.
+    caveat: >
+      Simulator-generated. naval_propulsion (UCI-316) was rejected for being a uniform grid sweep
+      with no time order; C-MAPSS is a set of ordered degradation trajectories, on which the
+      estimand is defined. Being simulated is nonetheless a real weakness.
+    binding_consequence: >
+      The confirmatory result is reported twice -- over all three PHYSICAL datasets, and restricted
+      to the two measured ones (gas_temp_mod, metropt3). Where the readings disagree, the
+      measured-only reading governs the claim. Fixed before download.
+    target_rule: >
+      Remaining useful life, the benchmark's own task, as a regression. Units concatenated in unit
+      order. Label maturation is approximately one window; stated as a limitation in the manuscript.
+    licence: NASA open data (US Government work, no copyright).
+    citation: >
+      Saxena, Goebel, Simon and Eklund, Damage propagation modeling for aircraft engine run-to-
+      failure simulation, IEEE PHM, 2008.
+
+# Screened out by the pre-registered rules, recorded rather than removed.
+excluded_by_rule:
+  gas_drift:
+    rule: D26
+    detail: 97 valid origins (< 100) and censoring 0.000 at margin 0.20.
+    note: Not rescued. Moving the threshold with the count known is what pre-registration prevents.
+  air_quality:
+    rule: D26
+    detail: 41 valid origins (< 100) and censoring 0.000 at margin 0.20.
+  hydraulic:
+    rule: windowing rule (src/datasets/mechanism.py)
+    detail: 2205 rows yield at most 88 windows at the smallest admissible window size; refused at load.
+  huffpost:
+    rule: D26
+    detail: 125 valid origins but censoring 0.000, outside the open interval (0, 0.6). Consistent with D27.
+
+# ---------------------------------------------------------------- considered and rejected
+# Recorded so that the choice set is visible and cannot be reconstructed favourably later.
+rejected:
+  naval_propulsion:
+    source_id: UCI-316
+    reason: >
+      Simulator output swept on a uniform grid of decay coefficients. Not a temporally ordered
+      stream, so the estimand is undefined on it. Rejected on structure, before any run.
+  beijing_multisite:
+    source_id: UCI-501
+    class: AMBIGUOUS
+    reason: >
+      Hourly pollutants and meteorology across 12 sites. The provider states no drift mechanism;
+      assigning it PHYSICAL would require us to infer the mechanism, which the rule forbids.
+  household_power:
+    source_id: UCI-235
+    class: AMBIGUOUS
+    reason: >
+      Household consumption mixes occupant behaviour with seasonal physics and the provider states
+      no drift mechanism. Excluded rather than argued into a class.
